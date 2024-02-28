@@ -18,4 +18,9 @@ class ProductService
         $products = $this->productRepository->getAll();
         return $products;
     }
+
+    public function getProductsByCategoryId ($categoryId) {
+        $productsByCategoryId = $this->productRepository->getbyCategoryId($categoryId);
+        return $productsByCategoryId;
+    }
 }
